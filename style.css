@@ -96,9 +96,9 @@ nav button {
 }
 hr {
   width: 100%;
-  border: 1px solid rgb(4, 26, 26);
+  border: 1px solid #333;
   padding: 1px;
-  background-color: rgb(9, 30, 3);
+  background-color: #333;
 }
 
 /* .......features section......... */
@@ -159,6 +159,12 @@ hr {
   width: 100%;
   max-width: 750px;
 }
+.question :hover{
+  background: #151212ea;
+  color: #fff;
+
+
+}
 .question li {
   list-style: none;
   width: 100%;
@@ -207,4 +213,106 @@ input[type="radio"] {
 
 .faq small {
   font-size: 25px;
+}
+/* for text selection color change */
+::selection{
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+/* question section */
+
+.footer{
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+}
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  
+}
+.footer h2 a{
+  color: #fff;
+}
+.footer .col{
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer .col a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-family: 14px;
+  margin-bottom: 10px;
+}
+.footer .row{
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.footer .language-btn{
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+.copyright-txt{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* ------media-queries for small screen----- */
+
+@media only screen and (max-width: 600px){
+  .logo{
+    width: 100px;
+  }
+  nav button{
+    padding: 5px 10px;
+  }
+  nav .language-btn{
+    padding: 4px 8px;
+  }
+  .header-content{
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+  }
+  .header-content h1{
+    font-size: 30px;
+
+}
+.email-signup button{
+  font-size: 12px;
+  padding: 10px 15px;
+
+}
+.text-col, .img-col{
+  flex-basis: 100%;
+
+}
+.features h2{
+  font-size: 30px;
+}
+.features p{
+  font-size: 14px;
+}
+.features .row{
+  padding: 10px 0;
+}
+.faq h2{
+  font-size: 20px;
+  
+}
+.question .answer{
+  font-size: 14px;
+}
+.question li lable{
+  font-size: 14px;
+  padding: 10px;
+}
+label::after{
+  font-size: 22px;
+}
 }
